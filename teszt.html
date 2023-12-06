@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Farkas Eszter Szonja">
+    <meta name="copyright" content="Csak oktatási célokra">
+    <meta name="description" content="Az Arcane című sorozat bemutatása">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arcane_style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <title>Arcane</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Arcane</h1>
+    </header>
+
+    <div class="container" id="background"></div>
+
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="epizod.html">Episodes</a></li>
+        <li><a href="karakter.html">Main Characters</a></li>
+        <li><a href="#" class="current">Test</a></li>
+        <li><a href="rendeles.html">Merch</a></li>
+    </ul>
+    </nav>
+    <div class="container">
+        <article>
+            
+            <h2>Have you ever wondered wich Arcane charachter would be your best friend? Find out with this personality test!</h2>
+            <form id="myform" method="post" action="#">
+                
+                <h3>1. Choose a color:</h3>
+                <label><input type="radio" id="red" name="szin">Red<br></label>
+                <label> <input type="radio" id="blue" name="szin">Blue<br></label>
+                <label><input type="radio" id="pink" name="szin">Pink<br></label>
+                <label><input type="radio" id="green" name="szin">Green<br></label>
+                <label><input type="radio" id="purple" name="szin">Purple<br></label>
+                <label><input type="radio" id="gold" name="szin">Gold<br></label>
+                <label><input type="radio" id="brown" name="szin">Brown<br></label>
+                <label><input type="radio" id="yellow" name="szin">Yellow<br></label>
+            
+
+
+                <h3>2. Choose an animal:</h3>
+                <label><input type="radio" id="bull" name="allat">Bull<br></label>
+                <label><input type="radio" id="fox" name="allat">Fox<br></label>
+                <label><input type="radio" id="cat" name="allat">Cat<br></label>
+                <label><input type="radio" id="dog" name="allat">Dog<br></label>   
+                <label><input type="radio" id="snake" name="allat">Snake<br></label>
+                <label><input type="radio" id="dolphin" name="allat">Dolphin<br></label>
+                <label><input type="radio" id="squirrel" name="allat">Squirrel<br></label>
+                <label><input type="radio" id="lion" name="allat">Lion<br></label>
+
+                
+                <h3>3. Which of these words do you think best describe you? (You can choose multiple):</h3>
+                <label><input type="checkbox" id="t1">humble<br></label>
+                <label><input type="checkbox" id="t2">smart<br></label>
+                <label><input type="checkbox" id="t3">scary<br></label>
+                <label><input type="checkbox" id="t4">creative<br></label>
+                <label><input type="checkbox" id="t5">kind<br></label>
+                <label><input type="checkbox" id="t6">team player<br></label>
+                <label><input type="checkbox" id="t7">protective<br></label>
+                <label><input type="checkbox" id="t8">cool<br></label>
+                <label><input type="checkbox" id="t9">extroverted<br></label>
+                <label><input type="checkbox" id="t10">introverted<br></label>
+
+                <h3>4. Choose a profession:</h3>
+                <label><input type="radio" id="research" name="foglalkozas">Hextech Researcher<br></label>
+                <label><input type="radio" id="engineer" name="foglalkozas">Engineer<br></label>
+                <label><input type="radio" id="trade" name="foglalkozas">Trader and Negotiator<br></label>    
+                <label><input type="radio" id="society" name="foglalkozas">High Society Member<br></label>
+                <label><input type="radio" id="alchemist" name="foglalkozas">Alchemist<br></label>
+                <label><input type="radio" id="criminal" name="foglalkozas">Zaun Criminal Gang Member<br></label>
+                
+                <p><input type="button" value="Send in" id="gomb" class="urlap">
+                <input type="reset" value="Reset" class="urlap"></p>
+            </form>
+                
+                <h2 id="eredmeny"></h2>
+                <p id="leiras"></p>
+
+
+
+
+            
+            
+        </article>
+
+
+    </div>
+    <footer>
+        &copy; This is not an official website
+    </footer>
+<script src="arcane_script.js"> </script>
+</body>
+</html>

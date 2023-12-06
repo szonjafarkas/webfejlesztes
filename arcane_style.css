@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body {
+            font-family:'Lora', serif, 'Arial' ;
+            margin: 0;
+            padding: 0;
+            background-color: #101922;
+            color:#7a63c2
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .container>* {
+			height: fit-content;
+    margin: 1%;}
+
+        
+        header {
+            background-color: #101922;
+            color: #996633;
+            padding: 10px;
+            text-align: center;
+            
+            
+        }
+
+        #background { background-image: url("hatter.png");
+            background-position: center;
+            background-repeat:no-repeat;
+            height:500px;
+
+        }
+
+        nav {
+            background-color: #101922;
+            color: #ede0ce;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+        }
+
+        nav li a {
+            display: block;
+            padding: 8px;
+            margin-bottom: 12px;
+            color: #101922;
+            background-color: #996633;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav ul li a.current {
+            background-color: #663300;
+            color:#101922;
+        }
+        
+        nav li a:hover {
+            background-color: #872D62;
+        }
+
+        article {
+            flex: 1 1 100%;
+            background-color: #996633;
+            padding: 0px 8px;
+            color: #101922;
+            text-align: justify;
+            border-radius: 15px;
+        }
+
+        article.galleria{
+            background-color: #101922;
+        }
+        
+
+        footer {
+            background-color: #996633;
+            color: #101922;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        img {
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            
+            
+        }
+
+        img.albumkep:hover{
+            transform: scale(1.05);
+            transition:2s;}
+
+        .galleria {
+                
+                margin: auto;
+                width: 30vw;
+                height: 45vw;
+                
+            }
+
+        .urlap{
+            border-radius: 15px;
+        }
+
+        
+
+
+        @media all and (min-width: 600px)
+        /*tablet*/
+        {
+            /*karakter*/
+
+            img.karakterkep{
+                float: right;
+            }
+
+            /*epizod*/
+            article.episode1{
+                flex-basis:45%;
+            }
+            article.episode2{
+                flex-basis:45%;
+            }
+            article.episode3{
+                flex-basis:45%;
+            }
+            article.episode4{
+                flex-basis:45%;
+            }
+            article.episode5{
+                flex-basis:45%;
+            }
+            article.episode6{
+                flex-basis:45%;
+            }
+            article.episode7{
+                flex-basis:45%;
+            }
+            article.episode8{
+                flex-basis:45%;
+            }
+            article.episode9{
+                flex-basis:45%;
+            }
+            article.galleria{
+                flex-basis:45%;
+            }
+
+
+            
+
+            
+
+        }
+
+        @media all and (min-width: 768px)
+        /*számítógép*/
+        {
+            div.container{flex-direction: row;}
+            nav ul{flex-direction:row;}
+            nav li {flex-basis:18%;}
+
+            /*karakter*/
+
+            article.jinx{
+                flex-basis:45%;
+            }
+            article.vi{
+                flex-basis:45%;
+            }
+            article.vander{
+                flex-basis:45%;
+            }
+            article.silco{
+                flex-basis:45%;
+            }
+            article.caitlyn{
+                flex-basis:45%;
+            }
+            article.jayce{
+                flex-basis:45%;
+            }
+            article.ekko{
+                flex-basis:45%;
+            }
+            article.mel{
+                flex-basis:45%;
+            }
+            article.viktor{
+                flex-basis:45%;
+            }
+            article.heimerdinger{
+                flex-basis:45%;
+            }
+
+            
+            
+
+            
+
+
+            /*index*/ 
+
+            article.piltover{
+                flex-basis:45%;
+            }
+            article.zaun{
+                flex-basis:45%;
+            }
+
+            img.varoskep{float:right;}
+            img.albumkep{float:right;}
+            
+
+
+        }

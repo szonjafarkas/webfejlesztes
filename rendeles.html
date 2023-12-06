@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Farkas Eszter Szonja">
+    <meta name="copyright" content="Csak oktatási célokra">
+    <meta name="description" content="Az Arcane című sorozat bemutatása">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arcane_style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#myform").validate({
+            rules: {
+            nev: "required",
+            szam:{
+            required: true,
+            digits: true
+            },
+            mail: {
+            required: true,
+            email: true
+            },
+            datum:{
+                required:true
+            },
+            indoklas:{
+                required: true
+            },
+            accept: {
+            required: true,
+            },
+
+            },
+
+            messages: {
+            nev: "Please Enter your name!",
+            szam:{
+                required: "Please enter your phone number!",
+                digits: "Please enter digits only!"
+            },
+            mail: " Please enter a real e-mail adress!",
+            datum:"Please select a date!",
+            indoklas:"Please write something here!",
+            accept: "Please read and accept our policies!",
+            },
+
+        });
+        });
+        </script>
+
+    <title>Arcane</title>
+    <style>
+        label.error {
+        color: #872D62;
+        font-weight: bold; }
+        </style>
+        
+    
+</head>
+<body>
+
+    <header>
+        <h1>Arcane</h1>
+    </header>
+
+    <div class="container" id="background"></div>
+
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="epizod.html">Episodes</a></li>
+        <li><a href="karakter.html">Main Characters</a></li>
+        <li><a href="teszt.html">Test</a></li>
+        <li><a href="#" class="current">Merch</a></li>
+
+    </ul>
+    </nav>
+    <div class="container">
+        <article>
+            <h2>You have a chance to win an Arcane T-shirt by filling out this form!</h2>
+            <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post"
+            id="myform" novalidate>
+                <p><label>Name: <input type="text" placeholder="Andrew Smith" name="nev" class="urlap"></label></p>
+                <p><label>Phone Number: <input type="text" name="szam" class="urlap"></label></p>
+                <p><label>E-mail Adress: <input type="email" name="mail" class="urlap"></label></p>
+               <p> Which character do you want on your shirt? 
+                <select name="kar">
+                    <option>All of them!</option>
+                    <option>Jinx</option>
+                    <option>Vi</option>
+                    <option>Caitlyn</option>
+                    <option>Mel</option>
+                    <option>Ekko</option>
+                    <option>Jayce</option>
+                    <option>Vander</option>
+                    <option>Silco</option>
+                    <option>Viktor</option>
+                    <option>Heimerdinger</option>
+                </select></p>
+                <p>What color do you want your shirt to be?
+                <input type="color" name="szin"></p>
+                <p>What size should your shirt be?
+                <select name="meret">
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select></p>
+                <p>When would you like your shirt to arrive?
+                <input type="date" name="datum"></p>
+
+                <label>Why do you think that you should win a shirt?<br>
+                <textarea name="indoklas" rows="5" cols="50" class="urlap"></textarea></label>
+
+                <p><label>I read and accept the privacy policies of this website<input type="checkbox" name="accept"></input></label></p>
+
+                <p><input type="submit" value="Send in" class="urlap">
+                <input type="reset" class="urlap"></p>
+
+            </form>
+        </article>
+
+
+    </div>
+    <footer>
+        &copy; This is not an official website
+    </footer>
+
+</body>
+</html>
