@@ -1,6 +1,6 @@
 1. Oldalt készítette: Farkas Eszter Szonja
 
-2. A weblap URL címe: https://github.com/szonjafarkas/webfejlesztes.git
+2. A weblap URL címe:  https://szonjafarkas.github.io/webfejlesztes/
 
 3. Téma: A weboldalamat az Arcane című sorozatról készítettem. Itt található a karakterekről és az epizódokról leírás, egy személyiségi teszt és egy nyereményjáték.
 
